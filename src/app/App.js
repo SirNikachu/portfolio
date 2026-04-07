@@ -17,6 +17,7 @@ import DroneProject from "../pages/projects/DroneProject";
 import IndyProject from "../pages/projects/IndyProject";
 import AnkiProject from "../pages/projects/AnkiProject";
 import GraceProject from "../pages/projects/GraceProject";
+import CombatRobotProject from "../pages/projects/CombatRobotProject";
 import EVBatteryProject from "../pages/projects/EVBatteryProject";
 
 function App() {
