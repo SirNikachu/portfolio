@@ -1,166 +1,147 @@
-const logotext = "JOHN";
-const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+export const logotext = "NIKITH";
+
+export const meta = {
+  title: "Nikith Kandula",
+  description:
+    "Incoming Computer Engineer at MITRE | Auburn University | Autonomous Systems & Robotics",
 };
 
-const introdata = {
-    title: "I’m John Doe",
-    animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
-    },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+export const introdata = {
+  title: "I'm Nikith Kandula",
+  animated: {
+    first: "I build autonomous systems",
+    second: "I develop full-stack apps",
+    third: "I love motorsports & robotics",
+  },
+  description:
+    "Computer Engineering student at Auburn University passionate about autonomous vehicles, robotics, and intelligent systems. Incoming Computer Engineer at MITRE.",
+  your_img_url: "https://images.unsplash.com/photo-1518770660439-4636190af475",
 };
 
-const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+export const dataabout = {
+  title: "A bit about myself",
+  aboutme:
+    "I'm a results-oriented Computer Engineering student at Auburn University (GPA: 3.5) who thrives on solving challenging problems and turning ideas into reality. Whether it's debugging complex systems, designing robotics and electromechanical solutions, or developing software, I enjoy the process of creating and optimizing technology. My passion lies in motorsports and autonomous vehicles, where I've gained hands-on experience through projects such as the Indy Autonomous Challenge, autonomous drone development, and advanced vehicle energy systems research. I'm also deeply interested in the applications of deep learning and AI to autonomy, control, and intelligent system design.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
+
+export const worktimeline = [
+  {
+    jobtitle: "Incoming Computer Engineer",
+    where: "MITRE",
+    date: "2027",
+  },
+  {
+    jobtitle: "Student Researcher – GPS & Vehicle Dynamics Lab (Indy Autonomous Challenge)",
+    where: "Auburn University",
+    date: "Jan 2025 – Feb 2026",
+  },
+  {
+    jobtitle: "Undergraduate Research Assistant – Autonomous Drone",
+    where: "Auburn University (Prof. Bosen Lian)",
+    date: "May 2025 – Aug 2025",
+  },
+  {
+    jobtitle: "Full Stack SWE Intern",
+    where: "Alabama Office of Information Technology",
+    date: "May 2024 – Sep 2024",
+  },
+  {
+    jobtitle: "Project Website Developer",
+    where: "GRACE Project, Auburn University",
+    date: "Sep 2024 – Jan 2026",
+  },
+  {
+    jobtitle: "Undergraduate Research Assistant – EV Battery Research",
+    where: "Advanced Vehicle Technology Competitions (Prof. Mehmet Arik)",
+    date: "Oct 2025 – Dec 2025",
+  },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
+export const skills = [
+  { name: "Python", value: 90 },
+  { name: "C / C++", value: 85 },
+  { name: "JavaScript", value: 80 },
+  { name: "Java", value: 75 },
+  { name: "ROS2", value: 70 },
+  { name: "MATLAB / Simulink", value: 75 },
+  { name: "HTML / CSS", value: 85 },
+  { name: "SQL", value: 70 },
+  { name: "Git / Linux", value: 80 },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
+export const services = [
+  {
+    title: "Autonomous Systems",
+    description:
+      "Sensor fusion with LiDAR, radar, GPS, and cameras. Localization, motion planning, and control using ROS2 and C++.",
+  },
+  {
+    title: "Full Stack Development",
+    description:
+      "Building responsive web apps with React, JavaScript, HTML/CSS, and ASP.NET Core MVC architecture.",
+  },
+  {
+    title: "Robotics & Embedded Systems",
+    description:
+      "Designing and programming combat robots, drones, and VEX robots with C++, CAD, and real-time control systems.",
+  },
+  {
+    title: "AI / ML Applications",
+    description:
+      "Applying machine learning and optimization algorithms (GA, PSO, diffusion models) to real-world engineering problems.",
+  },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+export const dataportfolio = [
+  {
+    img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600",
+    description:
+      "Autonomous Drone Localization – Real-time OptiTrack-based indoor positioning framework with sub-millimeter accuracy.",
+    link: "/projects/drone",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600",
+    description:
+      "Indy Autonomous Challenge – LiDAR/radar/camera sensor fusion for AV localization and motion planning.",
+    link: "/projects/indy",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600",
+    description:
+      "Anki Overdrive BLE Control System – Python & C++ multi-car control with real-time track visualization.",
+    link: "/projects/anki",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600",
+    description:
+      "GRACE Project Website – Responsive agricultural research site built with HTML, JS, and Bootstrap.",
+    link: "/projects/grace",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600",
+    description:
+      "Combat Robot – Autodesk Inventor weapon system design with force, torque, and energy optimization.",
+    link: "/projects/combat-robot",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600",
+    description:
+      "EV Battery Research – AI-driven thermal modeling (GA, PSO, diffusion models) for next-gen battery pack design.",
+    link: "/projects/ev-battery",
+  },
 ];
 
-const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+export const contactConfig = {
+  YOUR_EMAIL: "reachme.nikkandula@gmail.com",
+  YOUR_FONE: "334-895-3418",
+  description:
+    "Feel free to reach out — whether it's about a job opportunity, collaboration, or just to connect. I'm always open to talking about autonomy, robotics, and engineering.",
+  YOUR_SERVICE_ID: "service_id",
+  YOUR_TEMPLATE_ID: "template_id",
+  YOUR_USER_ID: "user_id",
 };
 
-const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-};
-export {
-    meta,
-    dataabout,
-    dataportfolio,
-    worktimeline,
-    skills,
-    services,
-    introdata,
-    contactConfig,
-    socialprofils,
-    logotext,
+export const socialprofils = {
+  github: "https://github.com/SirNikachu",
+  linkedin: "https://linkedin.com/in/nik-kandula",
 };

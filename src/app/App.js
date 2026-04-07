@@ -1,41 +1,54 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
-import withRouter from "../hooks/withRouter";
-import AppRoutes from "./routes";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+
+import { Socialicons } from "../components/socialicons";
 import Headermain from "../header";
-import AnimatedCursor  from "../hooks/AnimatedCursor";
+
 import "./App.css";
 
-function _ScrollToTop(props) {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return props.children;
-}
-const ScrollToTop = withRouter(_ScrollToTop);
+import { Home } from "../pages/home";
+import { About } from "../pages/about";
+import { ContactUs } from "../pages/contact";
+import { Portfolio } from "../pages/portfolio";
+// Project subpages
+import DroneProject from "../pages/projects/DroneProject";
+import IndyProject from "../pages/projects/IndyProject";
+import AnkiProject from "../pages/projects/AnkiProject";
+import GraceProject from "../pages/projects/GraceProject";
+import CombatRobotProject from "../pages/projects/CombatRobotProject";
+import EVBatteryProject from "../pages/projects/EVBatteryProject";
 
-export default function App() {
+function App() {
+  const location = useLocation();
+
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <div className="cursor__dot">
-        <AnimatedCursor
-          innerSize={15}
-          outerSize={15}
-          color="255, 255 ,255"
-          outerAlpha={0.4}
-          innerScale={0.7}
-          outerScale={5}
-        />
-      </div>
-      <ScrollToTop>
-        <Headermain />
-        <AppRoutes />
-      </ScrollToTop>
-    </Router>
+    <div className="App">
+      <Headermain />
+      <TransitionGroup>
+        <CSSTransition key={location.key} timeout={400} classNames="fade" unmountOnExit>
+          <Routes location={location}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+
+            {/* Project subpages */}
+            <Route path="/projects/drone" element={<DroneProject />} />
+            <Route path="/projects/indy" element={<IndyProject />} />
+            <Route path="/projects/anki" element={<AnkiProject />} />
+            <Route path="/projects/grace" element={<GraceProject />} />
+            <Route path="/projects/combat-robot" element={<CombatRobotProject />} />
+            <Route path="/projects/ev-battery" element={<EVBatteryProject />} />
+
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </CSSTransition>
+      </TransitionGroup>
+      <Socialicons />
+    </div>
   );
 }
+
+export default App;
