@@ -135,7 +135,7 @@ export const contactConfig = {
   YOUR_EMAIL: "reachme.nikkandula@gmail.com",
   YOUR_FONE: "334-895-3418",
   description:
-    "Feel free to reach out — whether it's about a job opportunity, collaboration, or just to connect. I'm always open to talking about autonomy, robotics, and engineering.",
+    "Feel free to reach out whether it's about a job opportunity, collaboration, or just to connect. I'm always open to talking about autonomy, robotics, and engineering.",
   YOUR_SERVICE_ID: "service_id",
   YOUR_TEMPLATE_ID: "template_id",
   YOUR_USER_ID: "user_id",
