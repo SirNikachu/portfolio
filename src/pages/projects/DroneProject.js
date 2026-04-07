@@ -20,12 +20,13 @@ export default function DroneProject() {
           </div>
         </div>
 
-        {/* HERO — replace src with your own photo */}
+        {/* Hero — drone photo */}
         <div className="project-hero">
-          <div className="media-placeholder photo">
-            <span className="media-placeholder-icon">📷</span>
-            <span>Replace with drone / lab setup photo</span>
-          </div>
+          <img
+            src={`${process.env.PUBLIC_URL}/media/drones.jpg`}
+            alt="Autonomous drones in flight space"
+            className="hero-img"
+          />
         </div>
 
         <div className="project-body">
@@ -48,15 +49,23 @@ export default function DroneProject() {
             </p>
           </section>
 
-          {/* Photo grid — swap with real lab / setup images */}
+          {/* Camera placement + presentation photo */}
           <div className="media-grid">
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>OptiTrack camera array</span>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/poster.png`}
+                alt="SURE 2025 research poster"
+                className="hero-img"
+                style={{ height: "220px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Drone in flight space</span>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/presentation.jpeg`}
+                alt="SURE 2025 poster presentation"
+                className="hero-img"
+                style={{ height: "220px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
           </div>
 
@@ -71,6 +80,11 @@ export default function DroneProject() {
               with its onboard IMU data to produce a stable, low-latency state estimate for
               autonomous control.
             </p>
+            <img
+              src={`${process.env.PUBLIC_URL}/media/camera_placement.png`}
+              alt="OptiTrack camera placement diagram"
+              style={{ width: "100%", borderRadius: "12px", marginTop: "16px" }}
+            />
           </section>
 
           <section className="project-section">
@@ -127,12 +141,6 @@ export default function DroneProject() {
               </div>
             </div>
           </section>
-
-          {/* Video placeholder */}
-          <div className="media-placeholder video">
-            <span className="media-placeholder-icon">🎬</span>
-            <span>Replace with demo flight video</span>
-          </div>
 
           <section className="project-section">
             <h2>Results</h2>

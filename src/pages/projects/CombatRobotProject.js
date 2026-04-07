@@ -9,21 +9,22 @@ export default function CombatRobotProject() {
         <Link to="/portfolio" className="back-link">← Back to Portfolio</Link>
 
         <div className="project-header">
-          <h1>Combat Robot</h1>
+          <h1>VEX Robotics</h1>
           <p className="project-subtitle">
-            Auburn University · Designer & Programmer · May 2024
+            Auburn University · VEXU Auburn Robotics · August 2023 – Present
           </p>
           <div className="project-tags">
-            {["Autodesk Inventor", "CAD", "C++", "Mechanical Design", "Torque Analysis", "Embedded Systems"].map(t => (
+            {["C++", "Autodesk Inventor", "CAD", "PID Control", "Odometry", "Embedded Systems", "Technical Documentation"].map(t => (
               <span className="tag" key={t}>{t}</span>
             ))}
           </div>
         </div>
 
+        {/* Hero image placeholder */}
         <div className="project-hero">
           <div className="media-placeholder photo">
             <span className="media-placeholder-icon">📷</span>
-            <span>Replace with robot photo</span>
+            <span>Replace with robot hero photo</span>
           </div>
         </div>
 
@@ -32,99 +33,140 @@ export default function CombatRobotProject() {
           <section className="project-section">
             <h2>Overview</h2>
             <p>
-              Combat robotics is engineering under pressure — literally. Robots enter an arena
-              and attempt to disable, flip, or destroy each other. Every design decision has
-              a direct, immediate consequence: a weapon that's too heavy slows the drivetrain;
-              a chassis that's too thin shatters on the first hit; a weapon motor that's
-              undersized never reaches full spin speed.
+              I've competed in VEX Robotics for 5 years — 4 years through high school and
+              continuing into college with VEXU Auburn Robotics. Over that time I've built
+              and programmed robots across multiple game seasons, developing deep experience
+              in mechanical design, autonomous programming, and real-time control systems.
             </p>
             <p>
-              I designed and programmed a combat robot for competition, taking ownership of
-              both the mechanical weapon system design in Autodesk Inventor and the onboard
-              control logic in C++. The design process was grounded in real physics — every
-              major dimension was derived from force, torque, and energy calculations rather
-              than guesswork.
+              VEX U is the collegiate division — teams design and build two fully custom
+              robots from scratch each season to compete in a new game challenge. Unlike
+              high school VEX, VEX U allows custom fabrication, any programming language,
+              and significantly more design freedom. Every robot is a full engineering
+              project: mechanical design, electronics integration, and software — all
+              built and iterated on within a single season. 
             </p>
           </section>
 
+          {/* Photo grid */}
           <div className="media-grid">
+            <div className="media-placeholder small">
+              <span className="media-placeholder-icon">📷</span>
+              <span>Robot on field photo</span>
+            </div>
             <div className="media-placeholder small">
               <span className="media-placeholder-icon">📷</span>
               <span>CAD model / render</span>
             </div>
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Physical robot photo</span>
-            </div>
           </div>
 
           <section className="project-section">
-            <h2>Design Process</h2>
+            <h2>What I Built</h2>
             <div className="project-bullets">
-              <div className="bullet-item">
-                <span className="bullet-icon">⚔️</span>
-                <div>
-                  <strong>Weapon System Design</strong>
-                  <p>
-                    Designed the primary weapon — a spinning mass weapon — in Autodesk Inventor,
-                    iterating on geometry to maximize rotational kinetic energy (KE = ½Iω²) while
-                    staying within weight class limits. Calculated moment of inertia for each
-                    design iteration and selected motor specs to achieve target spin-up time
-                    within the opening seconds of a match.
-                  </p>
-                </div>
-              </div>
+
               <div className="bullet-item">
                 <span className="bullet-icon">📐</span>
                 <div>
-                  <strong>Physics-Driven Optimization</strong>
+                  <strong>Full Robot CAD in Autodesk Inventor</strong>
                   <p>
-                    Applied force analysis to size weapon mounts and chassis attachment points
-                    for impact loads — modeling the impulse force during a weapon-on-armor hit
-                    to ensure structural integrity. Used torque calculations to match gear ratios
-                    between the weapon motor and weapon shaft, optimizing for both spin-up
-                    acceleration and top-end angular velocity.
+                    Designed complete robot assemblies in Autodesk Inventor, modeling the
+                    drivetrain, intake mechanisms, scoring subsystems, and structural chassis.
+                    Each design went through multiple iterations — adjusting geometry for
+                    weight distribution, center of mass, and mechanical advantage before
+                    committing to fabrication. Generated detailed technical drawings for
+                    every custom part, specifying tolerances and material for machining
+                    and 3D printing.
                   </p>
                 </div>
               </div>
-              <div className="bullet-item">
-                <span className="bullet-icon">🔩</span>
-                <div>
-                  <strong>Full CAD Assembly</strong>
-                  <p>
-                    Built a complete parametric 3D assembly in Autodesk Inventor covering the
-                    chassis, weapon assembly, drivetrain, electronics bay, and armor panels.
-                    Generated technical drawings for each fabricated part, specifying tolerances,
-                    material, and finish — ready for machining and 3D printing.
-                  </p>
-                </div>
-              </div>
+
               <div className="bullet-item">
                 <span className="bullet-icon">💻</span>
                 <div>
-                  <strong>Onboard C++ Control</strong>
+                  <strong>Autonomous Programming in C++</strong>
                   <p>
-                    Wrote the robot's control firmware in C++, handling RC receiver input parsing,
-                    weapon motor ESC control, drivetrain mixing (tank drive), and weapon
-                    enable/disable safety logic. Implemented a spin-down interlock that prevents
-                    the weapon from being re-armed until it has fully stopped — a required safety
-                    feature in competition rules.
+                    Wrote all autonomous routines in C++ using the PROS (Purdue Robotics
+                    Operating System) framework. Autonomous routines must execute a precise
+                    sequence of movements and actions in under 15 seconds with no driver
+                    input — requiring accurate motion control and reliable state management
+                    to score consistently across different field conditions.
                   </p>
                 </div>
               </div>
+
+              <div className="bullet-item">
+                <span className="bullet-icon">🎯</span>
+                <div>
+                  <strong>PID Controllers for Motion Control</strong>
+                  <p>
+                    Implemented PID (Proportional-Integral-Derivative) controllers for
+                    precise drive control — tuning separate PID loops for forward/backward
+                    translation and point turns. Tuned Kp, Ki, and Kd gains empirically
+                    through iterative testing, achieving consistent stopping accuracy within
+                    a few millimeters across straight-line moves and turns. Also applied
+                    PID to mechanism control for consistent, repeatable subsystem actuation.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bullet-item">
+                <span className="bullet-icon">📍</span>
+                <div>
+                  <strong>Real-Time Localization with Odometry</strong>
+                  <p>
+                    Built a full odometry system for real-time robot position tracking on
+                    the field. Using two perpendicular tracking wheels (dead wheels) and
+                    an IMU, the system integrates wheel encoder deltas at high frequency
+                    to maintain a continuous (x, y, θ) pose estimate throughout the
+                    autonomous period. This enabled absolute-position-based motion commands —
+                    "drive to coordinate (24, 48)" — rather than purely relative moves,
+                    dramatically improving autonomous consistency and allowing complex
+                    multi-point paths to be executed reliably.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bullet-item">
+                <span className="bullet-icon">📓</span>
+                <div>
+                  <strong>500+ Page Engineering Notebook</strong>
+                  <p>
+                    In VEXU, I took on the role of Documentation Lead, maintaining a 500+
+                    page engineering notebook — one of the most heavily weighted judged
+                    criteria in VEX competitions. The notebook documented every design
+                    decision using the full engineering design process: problem
+                    identification, brainstorming, design matrix evaluation, CAD
+                    development, build notes, test results, and iteration rationale across
+                    the entire season.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </section>
 
           {/* Video placeholder */}
           <div className="media-placeholder video">
             <span className="media-placeholder-icon">🎬</span>
-            <span>Replace with competition / test video</span>
+            <span>Replace with autonomous run or match video</span>
+          </div>
+
+          {/* Additional photo grid */}
+          <div className="media-grid">
+            <div className="media-placeholder small">
+              <span className="media-placeholder-icon">📷</span>
+              <span>Engineering notebook pages</span>
+            </div>
+            <div className="media-placeholder small">
+              <span className="media-placeholder-icon">📷</span>
+              <span>Competition / awards photo</span>
+            </div>
           </div>
 
           <section className="project-section">
             <h2>Tech Stack</h2>
             <div className="tech-stack">
-              {["Autodesk Inventor", "CAD / Technical Drawings", "C++", "Embedded Firmware", "RC ESC Control", "Torque & Force Analysis"].map(t => (
+              {["C++", "PROS Framework", "PID Control", "Odometry", "IMU / Encoder Fusion", "Autodesk Inventor", "CAD / Technical Drawings", "Engineering Notebook"].map(t => (
                 <span className="tech-item" key={t}>{t}</span>
               ))}
             </div>

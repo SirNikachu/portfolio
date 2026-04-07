@@ -14,7 +14,7 @@ export const introdata = {
     third: "I love motorsports & robotics",
   },
   description:
-    "Computer Engineering student at Auburn University passionate about autonomous vehicles, robotics, and intelligent systems. Incoming Computer Engineer at MITRE.",
+    "Computer Engineering student at Auburn University passionate about autonomous vehicles, robotics, and intelligent systems.",
   your_img_url: "https://images.unsplash.com/photo-1518770660439-4636190af475",
 };
 
@@ -94,37 +94,37 @@ export const services = [
 
 export const dataportfolio = [
   {
-    img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600",
+    img: "https://sc04.alicdn.com/kf/H968fc624684a48ef8329d9c57eda7fb6N.jpg",
     description:
       "Autonomous Drone Localization – Real-time OptiTrack-based indoor positioning framework with sub-millimeter accuracy.",
     link: "/projects/drone",
   },
   {
-    img: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600",
+    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
     description:
       "Indy Autonomous Challenge – LiDAR/radar/camera sensor fusion for AV localization and motion planning.",
     link: "/projects/indy",
   },
   {
-    img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600",
+    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
     description:
       "Anki Overdrive BLE Control System – Python & C++ multi-car control with real-time track visualization.",
     link: "/projects/anki",
   },
   {
-    img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600",
+    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
     description:
       "GRACE Project Website – Responsive agricultural research site built with HTML, JS, and Bootstrap.",
     link: "/projects/grace",
   },
   {
-    img: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600",
+    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
     description:
-      "Combat Robot – Autodesk Inventor weapon system design with force, torque, and energy optimization.",
+      "VEX Robot – Autodesk Inventor design and technical drawing creations.",
     link: "/projects/combat-robot",
   },
   {
-    img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600",
+    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
     description:
       "EV Battery Research – AI-driven thermal modeling (GA, PSO, diffusion models) for next-gen battery pack design.",
     link: "/projects/ev-battery",
