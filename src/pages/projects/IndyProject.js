@@ -20,12 +20,13 @@ export default function IndyProject() {
           </div>
         </div>
 
-        {/* HERO — replace with your own photo */}
+        {/* Hero — car photo */}
         <div className="project-hero">
-          <div className="media-placeholder photo">
-            <span className="media-placeholder-icon">📷</span>
-            <span>Replace with car / track / team photo</span>
-          </div>
+          <img
+            src={`${process.env.PUBLIC_URL}/media/car.jpeg`}
+            alt="Autonomous Tiger Racing AV-21"
+            className="hero-img"
+          />
         </div>
 
         <div className="project-body">
@@ -47,15 +48,21 @@ export default function IndyProject() {
             </p>
           </section>
 
-          {/* Photo grid */}
+          {/* car2 + map side by side */}
           <div className="media-grid">
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>AV-21 racecar photo</span>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/car2.jpeg`}
+                alt="AV-21 racecar"
+                style={{ width: "100%", height: "220px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Team / lab photo</span>
+            <div>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/map.jpeg`}
+                alt="Race track map"
+                style={{ width: "100%", height: "220px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
           </div>
 
@@ -118,11 +125,24 @@ export default function IndyProject() {
             </div>
           </section>
 
-          {/* Video placeholder */}
-          <div className="media-placeholder video">
-            <span className="media-placeholder-icon">🎬</span>
-            <span>Replace with competition / test run video</span>
-          </div>
+          {/* Vertical iPhone video — constrained width so it doesn't stretch */}
+          <section className="project-section">
+            <h2>On Track</h2>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <video
+                controls
+                style={{
+                  width: "100%",
+                  maxWidth: "360px",
+                  borderRadius: "12px",
+                  aspectRatio: "9/16",
+                }}
+              >
+                <source src={`${process.env.PUBLIC_URL}/media/racevideo.mp4`} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </section>
 
           <section className="project-section">
             <h2>Tech Stack</h2>

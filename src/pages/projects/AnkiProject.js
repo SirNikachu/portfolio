@@ -14,17 +14,19 @@ export default function AnkiProject() {
             Auburn University · May 2025
           </p>
           <div className="project-tags">
-            {["Python", "C++", "Bluetooth LE", "Tkinter", "GUI", "Embedded Systems"].map(t => (
+            {["Python", "C++", "Bluetooth LE", "Tkinter", "GUI", "Path Planning", "Embedded Systems"].map(t => (
               <span className="tag" key={t}>{t}</span>
             ))}
           </div>
         </div>
 
+        {/* Hero — cars photo */}
         <div className="project-hero">
-          <div className="media-placeholder photo">
-            <span className="media-placeholder-icon">📷</span>
-            <span>Replace with track / car setup photo</span>
-          </div>
+          <img
+            src={`${process.env.PUBLIC_URL}/media/cars.jpg`}
+            alt="Anki Overdrive cars"
+            className="hero-img"
+          />
         </div>
 
         <div className="project-body">
@@ -37,18 +39,28 @@ export default function AnkiProject() {
               While they ship with a consumer app, that app only supports one car at a time and
               gives minimal programmatic control. This project built an entirely custom control
               stack — from raw BLE command parsing all the way up to a graphical dashboard —
-              to enable coordinated multi-car management and full track visualization.
+              to enable coordinated multi-car management, full track visualization, and
+              autonomous path planning across the scanned track layout.
             </p>
           </section>
 
+          {/* Track IRL + track scan side by side */}
           <div className="media-grid">
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Track layout photo</span>
+            <div>
+              <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: "8px" }}>Physical Track</p>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/trackirl.webp`}
+                alt="Physical Anki Overdrive track"
+                style={{ width: "100%", height: "340px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>GUI screenshot</span>
+            <div>
+              <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: "8px" }}>Scanned Track Map</p>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/trackscan.webp`}
+                alt="Dynamically scanned track layout"
+                style={{ width: "100%", height: "340px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
           </div>
 
@@ -95,19 +107,58 @@ export default function AnkiProject() {
                   </p>
                 </div>
               </div>
+              <div className="bullet-item">
+                <span className="bullet-icon">🧭</span>
+                <div>
+                  <strong>Autonomous Path Planning</strong>
+                  <p>
+                    Using the dynamically scanned track map as a graph, implemented a path
+                    planning layer that computes optimal routes between any two track segments.
+                    The planner treats each track piece as a node and lane change points as
+                    edges, enabling a car to autonomously navigate from its current position
+                    to a target segment — issuing the correct sequence of lane changes and
+                    speed commands to follow the planned route without driver input.
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 
-          {/* Video placeholder */}
-          <div className="media-placeholder video">
-            <span className="media-placeholder-icon">🎬</span>
-            <span>Replace with demo video — multi-car control or track scan</span>
-          </div>
+          {/* Two vertical iPhone videos side by side */}
+          <section className="project-section">
+            <h2>Demo</h2>
+            <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
+              <video
+                controls
+                style={{
+                  width: "100%",
+                  maxWidth: "320px",
+                  borderRadius: "12px",
+                  aspectRatio: "9/16",
+                }}
+              >
+                <source src={`${process.env.PUBLIC_URL}/media/ankitest1.mp4`} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <video
+                controls
+                style={{
+                  width: "100%",
+                  maxWidth: "320px",
+                  borderRadius: "12px",
+                  aspectRatio: "9/16",
+                }}
+              >
+                <source src={`${process.env.PUBLIC_URL}/media/ankitest2.mp4`} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </section>
 
           <section className="project-section">
             <h2>Tech Stack</h2>
             <div className="tech-stack">
-              {["Python", "C++", "Bluetooth Low Energy (BLE)", "Tkinter", "OverdriveServer", "Joystick API", "Threading"].map(t => (
+              {["Python", "C++", "Bluetooth Low Energy (BLE)", "Tkinter", "OverdriveServer", "Joystick API", "Path Planning", "Graph Traversal", "Threading"].map(t => (
                 <span className="tech-item" key={t}>{t}</span>
               ))}
             </div>

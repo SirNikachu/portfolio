@@ -94,25 +94,25 @@ export const services = [
 
 export const dataportfolio = [
   {
-    img: "https://sc04.alicdn.com/kf/H968fc624684a48ef8329d9c57eda7fb6N.jpg",
+    img: "https://oscarliang.com/wp-content/uploads/2017/11/holybro-kopis-1-racing-drone-mini-quad-fpv-with-props.jpg",
     description:
       "Autonomous Drone Localization – Real-time OptiTrack-based indoor positioning framework with sub-millimeter accuracy.",
     link: "/projects/drone",
   },
   {
-    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
+    img: `${process.env.PUBLIC_URL}/media/carcover.jpeg`,
     description:
       "Indy Autonomous Challenge – LiDAR/radar/camera sensor fusion for AV localization and motion planning.",
     link: "/projects/indy",
   },
   {
-    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
+    img: `${process.env.PUBLIC_URL}/media/ankicover.webp`,
     description:
       "Anki Overdrive BLE Control System – Python & C++ multi-car control with real-time track visualization.",
     link: "/projects/anki",
   },
   {
-    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
+    img: "https://www.eng.auburn.edu/bsen/research/grace/img/lotsoftomatoes.jpg",
     description:
       "GRACE Project Website – Responsive agricultural research site built with HTML, JS, and Bootstrap.",
     link: "/projects/grace",

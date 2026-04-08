@@ -20,17 +20,16 @@ export default function GraceProject() {
           </div>
         </div>
 
-        <div className="project-hero">
-          <div className="media-placeholder photo">
-            <span className="media-placeholder-icon">📷</span>
-            <span>Replace with website screenshot or GRACE lab photo</span>
-          </div>
-        </div>
-
         <div className="project-body">
 
           <section className="project-section">
             <h2>Overview</h2>
+            {/* Logo */}
+            <img
+              src={`${process.env.PUBLIC_URL}/media/grace_logo.jpg`}
+              alt="GRACE Project logo"
+              style={{ height: "60px", objectFit: "contain", marginBottom: "20px", display: "block" }}
+            />
             <p>
               GRACE (Green-Reimaging of Agriculture in Controlled Environments) is an Auburn
               University research initiative focused on sustainable indoor farming — growing
@@ -46,14 +45,23 @@ export default function GraceProject() {
             </p>
           </section>
 
+          {/* Homepage + personnel screenshots */}
           <div className="media-grid">
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Desktop homepage screenshot</span>
+            <div>
+              <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: "8px" }}>Homepage</p>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/homepage_grace.png`}
+                alt="GRACE homepage screenshot"
+                style={{ width: "100%", height: "220px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Mobile view screenshot</span>
+            <div>
+              <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: "8px" }}>Personnel Page</p>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/personnel_grace.png`}
+                alt="GRACE personnel page screenshot"
+                style={{ width: "100%", height: "220px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
           </div>
 
@@ -138,7 +146,7 @@ export default function GraceProject() {
 
         <div className="project-nav">
           <Link to="/projects/anki" className="nav-btn nav-btn-secondary">← Previous: Anki Overdrive</Link>
-          <Link to="/projects/combat-robot" className="nav-btn">Next: Combat Robot →</Link>
+          <Link to="/projects/combat-robot" className="nav-btn">Next: VEX Robotics →</Link>
         </div>
       </div>
     </div>
