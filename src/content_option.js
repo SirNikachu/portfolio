@@ -118,7 +118,7 @@ export const dataportfolio = [
     link: "/projects/grace",
   },
   {
-    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
+    img: `${process.env.PUBLIC_URL}/media/robotcover.jpg`,
     description:
       "VEX Robot – Autodesk Inventor design and technical drawing creations.",
     link: "/projects/combat-robot",

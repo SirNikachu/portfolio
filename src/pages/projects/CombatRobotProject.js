@@ -20,14 +20,6 @@ export default function CombatRobotProject() {
           </div>
         </div>
 
-        {/* Hero image placeholder */}
-        <div className="project-hero">
-          <div className="media-placeholder photo">
-            <span className="media-placeholder-icon">📷</span>
-            <span>Replace with robot hero photo</span>
-          </div>
-        </div>
-
         <div className="project-body">
 
           <section className="project-section">
@@ -44,19 +36,27 @@ export default function CombatRobotProject() {
               high school VEX, VEX U allows custom fabrication, any programming language,
               and significantly more design freedom. Every robot is a full engineering
               project: mechanical design, electronics integration, and software — all
-              built and iterated on within a single season. 
+              built and iterated on within a single season.
             </p>
           </section>
 
-          {/* Photo grid */}
+          {/* Robot + awards side by side */}
           <div className="media-grid">
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Robot on field photo</span>
+            <div>
+              <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: "8px" }}>Robot</p>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/robotpic.jpg`}
+                alt="VEX robot"
+                style={{ width: "100%", height: "420px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>CAD model / render</span>
+            <div>
+              <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: "8px" }}>Competition</p>
+              <img
+                src={`${process.env.PUBLIC_URL}/media/awardsrobot.jpg`}
+                alt="VEX competition awards"
+                style={{ width: "100%", height: "420px", objectFit: "cover", borderRadius: "12px" }}
+              />
             </div>
           </div>
 
@@ -145,23 +145,32 @@ export default function CombatRobotProject() {
             </div>
           </section>
 
-          {/* Video placeholder */}
-          <div className="media-placeholder video">
-            <span className="media-placeholder-icon">🎬</span>
-            <span>Replace with autonomous run or match video</span>
-          </div>
-
-          {/* Additional photo grid */}
-          <div className="media-grid">
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Engineering notebook pages</span>
+          {/* Horizontal videos stacked */}
+          <section className="project-section">
+            <h2>Demo</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+              <div>
+                <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: "8px" }}>Path Planning Test</p>
+                <video
+                  controls
+                  style={{ width: "100%", borderRadius: "12px", maxHeight: "480px" }}
+                >
+                  <source src={`${process.env.PUBLIC_URL}/media/pathplan.mp4`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: "8px" }}>Robot Path Test</p>
+                <video
+                  controls
+                  style={{ width: "100%", borderRadius: "12px", maxHeight: "480px" }}
+                >
+                  <source src={`${process.env.PUBLIC_URL}/media/robotpathtest.mp4`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
-            <div className="media-placeholder small">
-              <span className="media-placeholder-icon">📷</span>
-              <span>Competition / awards photo</span>
-            </div>
-          </div>
+          </section>
 
           <section className="project-section">
             <h2>Tech Stack</h2>
