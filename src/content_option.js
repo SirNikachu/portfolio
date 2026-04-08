@@ -123,12 +123,6 @@ export const dataportfolio = [
       "VEX Robot – Autodesk Inventor design and technical drawing creations.",
     link: "/projects/combat-robot",
   },
-  {
-    img: "https://images.interestingengineering.com/images/import/2016/04/circuit-arduino.jpeg",
-    description:
-      "EV Battery Research – AI-driven thermal modeling (GA, PSO, diffusion models) for next-gen battery pack design.",
-    link: "/projects/ev-battery",
-  },
 ];
 
 export const contactConfig = {

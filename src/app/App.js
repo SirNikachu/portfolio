@@ -18,7 +18,6 @@ import IndyProject from "../pages/projects/IndyProject";
 import AnkiProject from "../pages/projects/AnkiProject";
 import GraceProject from "../pages/projects/GraceProject";
 import CombatRobotProject from "../pages/projects/CombatRobotProject";
-import EVBatteryProject from "../pages/projects/EVBatteryProject";
 
 function App() {
   const location = useLocation();
@@ -40,7 +39,6 @@ function App() {
             <Route path="/projects/anki" element={<AnkiProject />} />
             <Route path="/projects/grace" element={<GraceProject />} />
             <Route path="/projects/combat-robot" element={<CombatRobotProject />} />
-            <Route path="/projects/ev-battery" element={<EVBatteryProject />} />
 
             <Route path="*" element={<Home />} />
           </Routes>

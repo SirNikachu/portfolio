@@ -185,7 +185,7 @@ export default function CombatRobotProject() {
 
         <div className="project-nav">
           <Link to="/projects/grace" className="nav-btn nav-btn-secondary">← Previous: GRACE Website</Link>
-          <Link to="/projects/ev-battery" className="nav-btn">Next: EV Battery Research →</Link>
+          <Link to="/portfolio" className="nav-btn">Back to All Projects →</Link>
         </div>
       </div>
     </div>
